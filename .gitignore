@@ -1,0 +1,35 @@
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+
+# Uploaded documents
+storage/documents/*
+
+# Logs
+*.log
+
+
+.env
+venv/
+__pycache__/
+*.pyc
+.vscode/
+*.log
+
+# Local uploaded documents and generated data
+storage/documents/*
+storage/processed/*
+storage/ocr_results/*
+storage/processing_results/*
+
+# Python cache
+.pytest_cache/

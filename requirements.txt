@@ -1,0 +1,15 @@
+
+fastapi
+uvicorn[standard]
+streamlit
+sqlalchemy
+psycopg[binary]
+python-dotenv
+pydantic-settings
+python-multipart
+pymupdf
+Pillow
+requests
+paddleocr
+paddlepaddle
+groq
