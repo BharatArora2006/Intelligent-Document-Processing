@@ -10,6 +10,4 @@ python-multipart
 pymupdf
 Pillow
 requests
-paddleocr
-paddlepaddle
 groq
