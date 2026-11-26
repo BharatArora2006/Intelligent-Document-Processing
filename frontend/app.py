@@ -3,7 +3,7 @@ from datetime import datetime
 import fitz
 from pathlib import Path
 
-from frontend.services.api_client import (
+from services.api_client import (
     upload_documents,
     process_submission,
     get_submission_history,
