@@ -10,7 +10,12 @@ from groq import Groq
 # 1. Load environment variables
 # --------------------------------------------------
 
+
 def load_project_environment():
+    from dotenv import load_dotenv
+
+    # Load local .env if available.
+    # On Render, environment variables are supplied directly.
     current_path = Path(__file__).resolve()
 
     for parent in current_path.parents:
@@ -20,7 +25,9 @@ def load_project_environment():
             load_dotenv(env_file)
             return
 
-    raise FileNotFoundError("Project .env file not found.")
+    # No .env file is required when environment
+    # variables are already configured by the hosting platform.
+
 
 
 load_project_environment()
