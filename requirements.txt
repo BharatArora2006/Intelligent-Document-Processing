@@ -10,5 +10,4 @@ pymupdf
 Pillow
 requests
 groq
-paddleocr
-paddlepaddle
+rapidocr
