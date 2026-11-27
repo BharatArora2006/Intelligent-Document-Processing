@@ -1,7 +1,16 @@
 
 import requests
+import os
+import requests
+import streamlit as st
 
-API_BASE_URL = "http://127.0.0.1:8001/api/v1/documents"
+try:
+    API_BASE_URL = st.secrets["API_BASE_URL"]
+except Exception:
+    API_BASE_URL = os.getenv(
+        "API_BASE_URL",
+        "http://127.0.0.1:8001/api/v1/documents"
+    )
 
 
 def upload_documents(employee_id, dependent_name, relationship, files):
